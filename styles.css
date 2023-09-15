@@ -1,0 +1,395 @@
+/*Movil*/
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(251, 241, 190);
+}
+/*Banner*/
+header{
+    display: flex;
+    width: 100%;
+    background: linear-gradient(45deg, blue, red);
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    color: rgb(240, 248, 255);
+}
+ul{
+    display: none;
+}
+li{
+    list-style: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+    color: rgb(240, 248, 255);
+}
+/*Perfil*/
+.avatar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.avatar img{
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 8px 10px 10px rgba(58, 57, 57, 0.5);
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text h1{
+    font-family: sans-serif;
+    font-size: 25px;
+    margin: 10px 0;
+    color: rgb(19, 19, 110);
+    text-shadow: 9px 10px 3px rgba(58, 57, 57, 0.4);
+}
+.text h2{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin: 10px 0;
+    color: rgb(20, 20, 94);
+    text-shadow: 9px 10px 3px rgba(58, 57, 57, 0.4);
+}
+/*Waves*/
+.wave{
+    width: 100%;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("imagenes/wave.svg");
+}
+.wave-bottom{
+    width: 100%;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("imagenes/wave-bottom.svg");
+}
+/*Skills*/
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(248, 233, 159, 0.6);
+}
+.skills img{
+    width: 50px;
+    box-shadow: 10px 10px 10px rgba(72, 72, 72, 0.6);
+}
+.tecnologia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: rgb(18, 18, 68);
+}
+/*Proyectos*/
+.proyecto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: rgb(18, 18, 68);
+}
+.proyecto h2{
+    color: rgb(8, 8, 8);
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.center img{
+    width: 200px;
+    box-shadow: 10px 10px 10px rgba(72, 72, 72, 0.6);
+}
+/*Contacto*/
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.contact a{
+    color: rgb(18, 18, 68);
+}
+.icon{
+    width: 80%;
+    font-size: 18px;
+    margin: 0 30px;
+}
+.queries{
+    display: flex;
+    flex-direction: column;
+}
+textarea{
+    margin: 10px 0;
+}
+.send{
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: aliceblue;
+    background: rgb(0, 0, 194);
+    border: 1px solid rgb(0, 0, 194);
+    border-radius: 5px;
+    padding: 3px;
+}
+.pad{
+    padding-left: 10px;
+}
+/*Footer*/
+footer{
+    width: 100%;
+    background: linear-gradient(315deg, red, blue);
+}
+footer .icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    width: 75%;
+    padding: 10px 20px;
+    margin: 10px;
+    color: rgb(240, 248, 255);
+}
+.foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 75%;
+    padding: 5px;
+    font-size: 25px;
+}
+.foot a{
+    margin: 5px;
+    box-shadow: 5px 5px 10px rgba(250, 212, 212, 0.5);
+}
+footer h3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(240, 248, 255);
+}
+footer .menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+/*Tablet*/
+@media (min-width: 500px){
+    /*Banner*/
+    .icons{
+        display: flex;
+        flex-direction: row;
+        padding: 20px 0;
+    }
+    .icons ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: end;
+        width: 100%;
+    }
+    .icons ul li{
+        padding: 10px;
+    }
+    .icons a{
+        text-shadow: 10px 10px 10px rgba(8, 8, 8, 0.6);
+    }
+    .menu{
+        display: none;
+    }
+    /*Perfil*/
+    main{
+        width: 100%;
+    }
+    .avatar img{
+        margin-top: 20px;
+    }
+    .text{
+        margin-top: 10px;
+    }
+    /*Waves*/
+    .wave{
+        height: 60px;
+    }
+    /*Skills*/
+    .skills{
+        width: 100%;
+    }
+    .tecno{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    .tecnologia {
+        width: 40%;
+    }
+    .tecnologia p{
+        text-align: center;
+    }
+    /*Proyectos*/
+    .center img{
+        width: 350px;
+    }
+    /*Contacto*/
+    .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        width: 100%;
+    }
+    .conta{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /*Footer*/
+    footer{
+        width: 100%;
+    }
+    footer .menu{
+        display: none;
+    }
+    .foot{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+}
+/*Desktop*/
+@media(min-width: 1280px){
+    /*Banner*/
+    .icons{
+        width: 100%;
+        height: 100px;
+    }
+    .icons ul{
+        justify-content: flex-end;
+    }
+    .icons a:hover{
+        font-size: 22px;
+    }
+    /*Perfil*/
+    .avatar{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+    .avatar img{
+        margin: 70px;
+        width: 150px;
+        box-shadow: 8px 10px 10px rgba(58, 57, 57, 0.5);
+    }
+    .text h1{
+        font-size: 30px;
+        text-shadow: 9px 10px 3px rgba(58, 57, 57, 0.4);
+    }
+    .text h2{
+        font-size: 25px;
+        text-shadow: 9px 10px 3px rgba(58, 57, 57, 0.5);
+    }
+    /*Waves*/
+    .wave{
+        height: 80px;
+    }
+    /*Skills*/
+    .skills h2{
+        font-size: 30px;
+        margin-bottom: 40px;
+        color: rgb(18, 18, 68);
+    }
+    .tecnologia{
+        width: 30%;
+    }
+    .tecnologia img{
+        box-shadow: 10px 10px 10px rgba(72, 72, 72, 0.6);
+    }
+    .tecnologia img:hover{
+        box-shadow: 15px 15px 10px rgba(72, 72, 72, 0.6);
+        width: 55px;
+    }
+    /*Proyectos*/
+    .proye{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .proyecto h2{
+        font-size: 30px;
+        margin-bottom: 40px;
+        color: rgb(18, 18, 68);
+    }
+    .center{
+        width: 400px;
+    }
+    .center img:hover{
+        width: 410px;
+        box-shadow: 10px 10px 10px rgba(72, 72, 72, 0.6);
+    }
+    /*Contacto*/
+    .contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 80px 0 10px;
+    }
+    .conta{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    .contact h2{
+        font-size: 30px;
+        margin-bottom: 20px;
+        color: rgb(18, 18, 68);
+    }
+    .contact p{
+        font-size: 18px;
+    }
+    /*Footer*/
+    footer .icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0; 
+        margin: 10px 0;
+    }
+    .foot a:hover{
+        box-shadow: 5px 5px 5px rgba(248, 233, 159, 0.6);
+        font-size: 28px;
+    }
+}
